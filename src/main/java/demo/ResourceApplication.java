@@ -26,6 +26,14 @@ class ResourceApplication {
         return model;
     }
 
+    @RequestMapping("/route")
+    public Map<String,Object> route() {
+        Map<String,Object> model = new HashMap<String,Object>();
+        model.put("id", UUID.randomUUID().toString());
+        model.put("content", "this is the route");
+        return model;
+    }
+
     public static void main(String[] args) {
         SpringApplication.run(ResourceApplication.class, args);
     }
