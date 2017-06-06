@@ -15,7 +15,7 @@ import java.util.UUID;
 
 @SpringBootApplication
 @RestController
-class ResourceApplication {
+public class ResourceApplication {
 
     @RequestMapping("/")
     public Map<String,Object> home() {
